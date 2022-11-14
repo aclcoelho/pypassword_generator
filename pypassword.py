@@ -36,5 +36,5 @@ for number in range(1, nr_numbers + 1):
 for symbol in range(1, nr_symbols + 1):
     password.append(random.choice(symbols))
 
-final_list = random.sample(password, nr_letters+nr_numbers+nr_symbols)
-print("".join(final_list))
+final_list = "".join(random.sample(password, nr_letters+nr_numbers+nr_symbols))
+print(f"Your password is: {final_list}")
